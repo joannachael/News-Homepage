@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Frontend Mentor | News homepage</title>
+
+    <link 
+      rel="icon"
+      type="image/png" 
+      sizes="32x32" 
+      href="./images/favicon-32x32.png"
+    />
+    <link 
+      rel="stylesheet" 
+      href="scss/styles.css" 
+    />
+    <link
+      rel="stylesheet" 
+      href="https://fonts.googleapis.com/css?family=Inter:regular,700,800" 
+    />
+
+    <script src="js/navigation.js" defer></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__items">
+          <img 
+            alt="Logotype"
+            src="/images/logo.svg" 
+          />
+
+          <button 
+            class="header__toggle"
+            data-opened="false"
+            aria-controls="primary-navigation" 
+            aria-label="Open the navigation list"
+          >
+          </button>
+
+          <nav 
+            id="primary-navigation"
+            data-visible="false"
+            class="header__navigation"
+          >
+            <ul>
+              <li>
+                <a href="#">Home</a>
+              </li>
+              <li>
+                <a href="#">New</a>
+              </li>
+              <li>
+                <a href="#">Popular</a>
+              </li>
+              <li>
+                <a href="#">Trending</a>
+              </li>
+              <li>
+                <a href="#">Categories</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="news">
+        <div class="container">
+          <div class="news__columns">
+            <article class="main-article">
+              <picture class="main-article__image">
+                <source 
+                  media="(min-width: 45em)" 
+                  srcset="/images/image-web-3-desktop.jpg" 
+                />
+                <img
+                  alt="The Bright Future of Web" 
+                  src="/images/image-web-3-mobile.jpg"
+                />
+              </picture>
+              <div class="main-article__content-columns">
+                <h3 class="main-article__title">The Bright Future of Web 3.0?</h3>
+                <div>
+                  <p class="main-article__text">
+                    We dive into the next evolution of the web that claims to 
+                    put the power of the platforms back into the hands of the people. 
+                    But is it really fulfilling its promise?
+                  </p>
+                  <a class="button" href="#">Read more</a>
+                </div>
+              </div>
+            </article>
+
+            <aside class="news-aside">
+              <h2 class="news-aside__title">New</h2>
+              <div class="news-aside__snippets">
+                <div class="snippet">
+                  <h3 class="snippet__title">
+                    <a href="#">Hydrogen VS Electric Cars</a>
+                  </h3>
+                  <p class="snippet__text">
+                    Will hydrogen-fueled 
+                    cars ever catch up to EVs?
+                  </p>
+                </div>
+                <div class="snippet">
+                  <h3 class="snippet__title">
+                    <a href="#">The Downsides of AI Artistry</a>  
+                  </h3>
+                  <p class="snippet__text">
+                    What are the possible adverse 
+                    effects of on-demand AI image generation?
+                  </p>
+                </div>
+                <div class="snippet">
+                  <h3 class="snippet__title">
+                    <a href="#">Is VC Funding Drying Up</a>
+                  </h3>
+                  <p class="snippet__text">
+                    Private funding by VC firms is down 
+                    50% YOY. We take a look at what that means.
+                  </p>
+                </div>
+              </div>
+            </aside>
+          </div>
+          
+          <div class="news__secondary-articles">
+            <article class="secondary-article">
+              <img
+                class="secondary-article__image"
+                alt="Reviving Retro PCs"
+                src="/images/image-retro-pcs.jpg"
+              />
+              <div class="secondary-article__content">
+                <span class="secondary-article__counter"></span>
+                <h3 class="secondary-article__title">
+                  <a href="#">Reviving Retro PCs</a>
+                </h3>
+                <p>What happens when old PCs are given modern upgrades?</p>
+              </div>
+            </article>
+            <article class="secondary-article">
+              <img
+                class="secondary-article__image"
+                alt="Top Laptops"
+                src="/images/image-top-laptops.jpg"
+              />
+              <div class="secondary-article__content">
+                <span class="secondary-article__counter"></span>
+                <h3 class="secondary-article__title">
+                  <a href="#">Top 10 Laptops of 2022</a>
+                </h3>
+                <p>Our best picks for various needs and budgets.</p>
+              </div>
+            </article>
+            <article class="secondary-article">
+              <img
+                class="secondary-article__image"
+                alt="Growth of Gaming"
+                src="/images/image-gaming-growth.jpg"
+              />
+              <div class="secondary-article__content">
+                <span class="secondary-article__counter"></span>
+                <h3 class="secondary-article__title">
+                  <a href="#">The Growth of Gaming</a>
+                </h3>
+                <p>How the pandemic has sparked fresh opportunities.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
